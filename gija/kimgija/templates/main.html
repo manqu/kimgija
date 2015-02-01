@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css">
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/hanna.css">
+
+<link rel="stylesheet" type="text/css" href="statics/one.css">	
+
+<style type="text/css">
+	
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+@charset "UTF-8";
+
+@font-face{
+font-family:ng;
+src:url(Hanna.eot);
+src:local(※), url(Hanna.woff) format(‘woff’)
+}
+
+
+.login{
+	text-align: right;
+	float: right;
+	height: 30px;
+	margin: 10px;
+
+}
+
+.signup{
+	text-align: right;
+	float: right;
+	height: 30px;
+	margin: 10px;
+	
+}
+
+.login_signup{
+	height: 50px;
+}
+
+header{
+	
+	background-color: #707382;
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+}
+
+.title{
+	font-family: 'Hanna', serif;
+	height: 100px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+#title{
+	font-size:  80px;
+}
+
+.slogan{
+	height: 100px;
+	background-color: #707382;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.howto{
+	height: 50px;
+	width: 250px;
+	display: inline-block;
+	background-color: #707382;
+	margin-left: 350px;
+	margin-top: 50px;
+
+}
+
+.navi{
+	display: table;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;	
+}
+
+
+.enroll{
+	height: 50px;
+	width: 200px;
+	display: inline-block;
+	border: 1px solid #707382;
+	margin-top: 50px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;	
+}
+
+.show_rank{
+	height: 50px;
+	width: 200px;
+	display: inline-block;
+	background-color: #707382;
+	margin-top: 50px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;	
+}
+
+.board{
+	height: 50px;
+	width: 150px;
+	display: inline-block;
+	background-color: #707382;
+	margin-top: 50px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;		
+}
+
+#contents{
+	height:800px;
+
+
+}
+
+#sidebar{
+	height:100%;
+}
+
+.navbar{
+	padding: 20px;
+	text-align: center;
+}
+
+.col-xs-10{
+	display: inline-block;
+}
+
+.pyo{
+	text-align: center;
+	height: 50px;
+
+}
+
+.container{
+	display: table;
+}
+
+#ranklist{
+	width: 50px;
+	display: inline-block;
+}
+#rank{
+	height: 50px;
+	width: 50px;
+	display: block;
+
+}
+#r_list{
+	width: 50px;
+	text-align: center;
+	display: block;	
+}
+
+#gijalist{
+	width: 100px;
+	display: inline-block;
+}
+#gija{
+	height: 50px;
+	width: 100px;
+	display: block;
+}
+#g_list{
+	width: 100px;
+	text-align: center;
+	display: block;
+}
+
+#stamplist{
+	width: 100px;
+	display: inline-block;	
+}
+#stamp{
+	height: 50px;
+	width: 100px;
+	display: block;
+}
+#s_list{
+	width: 100px;
+	text-align: center;
+	display: block;	
+}
+
+#datelist{
+	width: 100px;
+	display: inline-block;
+}
+#date{
+	height: 50px;
+	width: 100px;
+	display: block;
+}
+#d_list{
+	width: 100px;
+	text-align: center;
+	display: block;	
+}
+
+#gisalist{
+	width: 550px;
+	display: inline-block;
+}
+#gisa{
+	height: 50px;
+	width: 550px;
+	display: block;
+}
+#gi_list{
+	width: 550px;
+	text-align: center;
+	display: block;	
+}
+
+#ratelist{
+	width: 60px;
+	display: inline-block;
+}
+#rate{
+	height: 50px;
+	width: 60px;
+	display: block;
+}
+#ra_list{
+	width: 60px;
+	text-align: center;
+	display: block;	
+}
+
+.page{
+	display: inline-block;
+	text-align: center;
+	margin-left: 400px;
+}
+
+#first{
+	display: inline-block;
+	text-align: center;
+}
+#second{
+	display: inline-block;
+	text-align: center;
+}
+#third{
+	display: inline-block;
+	text-align: center;
+}
+
+.ranking_list{
+	margin-top: 0px;
+}
+
+
+ul{
+	list-style: none;
+	padding: 10px;
+	text-align: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+ol{
+	list-style-position: outside;
+	text-align: left;
+}
+
+li{
+	padding-bottom: 20px;	
+	text-align: center;
+}
+
+body{
+	display: block;
+}
+
+h1{
+	text-align: center;
+	font-family: 'Hanna', serif;
+}
+
+h3{
+	font-family: 'Hanna', serif;
+	text-align: center;
+
+}
+
+div{
+
+	/*border: solid black 1px;*/
+	
+}
+
+
+footer{
+	padding: 10px;
+	display: block;
+	text-align: center;
+	background-color: #707382;
+}
+
+.about{
+	display: inline-block;
+}
+
+</style>
+
+</head>
+
+<body>
+
+	<header>
+	<div class="login_signup">
+		<div class="signup"><a href="#"><p>Sign Up</p></a></div>
+		<div class="login"><a href="#"><p>Login</p></a></div>
+	</div>
+		<hgroup >
+			<div class="title"><h1 id="title">김기자 김기레기</h1></div>
+			<div class="slogan"><h3>기자에게 권력을</h3></div>
+		</hgroup>	
+				<!--How to/기사등록 등 -->
+				<!--<div class="howto">
+					<a href="#"><h3 id="howto">김기자 김기레기 따라잡기</h3></a>
+				</div>-->
+			<div class="navi">
+				<div class="enroll">
+					<a href="#"><h3>기사 등록하기</h3></a>
+				</div>
+					
+				<!--<div class="show_rank">
+					<a href="#"><h3>기자 전체 순위 보기</h3></a>
+				</div>-->
+				<div class="board">
+					<a href="#"><h3>게시판</h3></a>
+				</div>	
+			</div>
+	</header>
+
+	<section id="contents">
+	<div class="container-fluid">
+	<div class="row-fluid">
+		<!--sidebar-->	
+		<div class="col-xs-1" id="sidebar">
+			<!--<nav>
+				<div class="navbar">
+				<a href="#"><h3>Home</h3></a>
+				<a href="#"><h3>정치</h3></a>
+				<a href="#"><h3>사회</h3></a>
+				<a href="#"><h3>경제</h3></a>
+				<a href="#"><h3>연예</h3></a>
+				<a href="#"><h3>스포츠</h3></a>
+
+				</div>
+			</nav>-->
+		</div>
+		
+	<!--body contents-->
+		<div class="col-xs-10" id="contents">
+		<!--실시간 순위 부분-->
+			<div class="row" style="margin-top:50px;">
+				<div class="col-xs-10 col-md-10" style="height=100px">
+					<div>
+						<!--<div class="pyo">
+							<h3><종합 실시간 순위></h3>				
+						</div>-->
+
+						<div class="container">
+							<div id="ranklist">
+								<div id="rank"><h3>순위</h3></div>
+								<div id="r_list">
+									<ul>
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+										<li>5</li>
+										<li>6</li>
+										<li>7</li>
+										<li>8</li>
+										<li>9</li>
+										<li>10</li>
+
+									</ul>
+								</div>
+							</div>
+							
+							<div id="gijalist">
+								<div id="gija"><h3>기자</h3></div>
+								<div id="g_list">
+									<ul>
+										<li>김기자</li>
+										<li>김기자</li>
+										<li>김기자</li>
+										<li>김기자</li>
+										<li>김기자</li>
+										<li>김기자</li>
+										<li>김기자</li>
+										<li>김기자</li>
+										<li>김기자</li>
+										<li>김기자</li>
+									</ul>
+								</div>
+							</div>
+							
+							<!--<div id="stamplist">
+								<div id="stamp"><h3>뱃지</h3></div>
+								<div id="s_list">
+									<ul>
+										<li> 쨘! 쨘! 쾅!</li>
+										<li> 쨘! 쨘! 쾅!</li>
+										<li> 쨘! 쨘! 쾅!</li>
+										<li> 쨘! 쨘! 쾅!</li>
+										<li> 쨘! 쨘! 쾅!</li>
+										<li> 쨘! 쨘! 쾅!</li>
+										<li> 쨘! 쨘! 쾅!</li>
+										<li> 쨘! 쨘! 쾅!</li>
+										<li> 쨘! 쨘! 쾅!</li>
+										<li> 쨘! 쨘! 쾅!</li>
+									</ul>
+								</div>
+							</div>
+							
+							<div id="datelist">
+								<div  id="date"><h3>날짜</h3></div>
+								<div id="d_list">
+									<ul>	
+										<li>2015/1/27</li>
+										<li>2015/1/20</li>
+										<li>2015/1/15</li>
+										<li>2015/1/15</li>
+										<li>2015/1/13</li>
+										<li>2015/1/12</li>
+										<li>2015/1/12</li>
+										<li>2015/1/12</li>
+										<li>2015/1/9</li>
+										<li>2015/1/7</li>
+									</ul>								
+								</div>
+							</div>-->
+							
+							<div id="gisalist">
+								<div id="gisa"><h3>기사</h3></div>
+								<div id="gi_list">
+									<ul>
+										<li>재연되는 민자도로 악몽</li>
+										<li>‘독도예산’ 일본보다 많이 쓰고도 뒤통수맞는 이유</li>
+										<li>세월호 청와대 기록 왜 공개 못하나?</li>
+										<li>공개한 기록 다시 비공개..황당한 대통령기록물관리</li>
+										<li>신년회견해부➃ 언제까지 이런 기자회견을?</li>
+										<li>신년회견해부③ 박근혜의 마이웨이…“김기춘-3인방 교체 없다</li>
+										<li>신년회견해부➀ 철지난 경제메뉴에 자화자찬</li>
+										<li>신년회견해부➁ 박근혜 대통령의 지우개</li>
+										<li>‘돈 먹는’ 섬 공항 사업…경제성도, 안전성도 의문</li>
+										<li>국정원 대공처장, 항소심서 간첩증거조작 ‘검찰 책임’ 제기</li>
+									</ul>								
+
+								</div>
+							</div>
+
+
+							<div id="ratelist">
+								<div id="rate"><h3>평점</h3></div>
+								<div id="ra_list">
+									<ul>
+										<li>7.5</li>
+										<li>6</li>
+										<li>5</li>
+										<li>5</li>
+										<li>5</li>
+										<li>5</li>
+										<li>5</li>
+										<li>5</li>
+										<li>5</li>
+										<li>5</li>
+									</ul>								
+
+								</div>
+							</div>
+
+
+							<div id="ratelist">
+								<div id="rate"></div>
+								<div id="ra_list">
+									<ul>
+										<li>☆ </li>
+										<li>☆ </li>
+										<li>☆ </li>
+										<li>☆ </li>
+										<li>☆ </li>
+										<li>☆ </li>
+										<li>☆ </li>
+										<li>☆ </li>
+										<li>☆</li>
+										<li>☆ </li>
+									</ul>								
+
+								</div>
+							</div>
+
+
+						</div>
+					</div>			
+					
+					<!--<div class="page">
+						<a href="#"><p id="first">1</p></a>
+						<a href="#"><p id="second">2</p></a>
+						<a href="#"><p id="third">3</p></a>
+					</div>-->
+				</div>
+
+			<!--Ranking Part-->
+				<div class="col-xs-2 col-md-2">
+					<div class="ranking_list">
+						
+						<div>
+							<div><h3>네가 기자냐?</h3></div>
+							<div>		
+								<ol>
+									<li>박기자</li>
+									<li>김기자</li>
+									<li>민기자</li>
+									<li>김기자</li>
+									<li>박기자</li>
+								</ol>
+							</div>
+							<div><p style="text-align:center;">더보기</p></div>
+						</div>			
+						<!--<div>
+									
+							<div><h3>주간 김기자 순위</h3></div>
+							<div>
+								<ol>
+									<li>김기자</li>
+									<li>박기자</li>
+									<li>김기자</li>
+									<li>박기자</li>
+									<li>민기자</li>
+								</ol>
+							</div>
+						</div>-->
+					</div>
+				</div>
+				
+				<div class="col-xs-1 col-md-1">
+					
+				</div>
+
+
+
+			</div>	
+		
+		</div>
+		
+	</div>	
+	</div>
+
+	</section>
+
+
+<!--Footer-->
+	<footer>
+		<div class="about">
+			<a href="#"><p>About us</p> </a>
+			<a href="#"><p>Contact</p></a>
+		</div>
+		
+		<p>copyright ⓒ P.rogramming</p>
+
+	</footer>
+
+</body>
+
+
+
+</html>
